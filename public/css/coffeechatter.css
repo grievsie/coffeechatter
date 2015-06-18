@@ -19,3 +19,7 @@ body {
     background-color: #cccccc;
     color:white;
 }
+
+input, select, textarea{
+    color: #8A2E00;
+}
