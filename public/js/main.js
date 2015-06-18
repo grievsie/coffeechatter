@@ -2,15 +2,15 @@
 
 var commands = {
 commands:[
-         { id: 0, name: "I could really go a coffee", type: "stmt", class:"label-info"},
-         { id: 1, name: "Who wants coffee?", type: "vote", class:"label-success", choices:['Yes','No']},
-         { id: 2, name: "Coffee Brewing", type: "stmt", class:"label-warning"},
-         { id: 3, name: "Coffee Ready", type: "stmt", class:"label-danger"},
-         { id: 4, name: "We are out of coffee", type: "stmt", class:"label-danger"},
+         { id: 0, name: "I fancy a cup of tea vicar", type: "stmt", class:"label-info"},
+         { id: 1, name: "Who wants a nice brew?", type: "vote", class:"label-success", choices:['Yes','No']},
+         { id: 2, name: "Tea's Brewing", type: "stmt", class:"label-warning"},
+         { id: 3, name: "Tea's Ready", type: "stmt", class:"label-danger"},
+         { id: 4, name: "We are out of tea bags", type: "stmt", class:"label-danger"},
          { id: 5, name: "Lunch?", type: "vote", class:"label-success", choices:['Yes','No']},
          { id: 6, name: "Foos?", type: "vote", class:"label-success", choices:['Yes','No']},
-         { id: 7, name: "Baristas?", type: "vote", class:"label-success", choices:['Yes','No']},
-         { id: 8, name: "We are running out of coffee!", type: "stmt", class:"label-info"},
+         { id: 7, name: "Pub?", type: "vote", class:"label-success", choices:['Yes','No']},
+         { id: 8, name: "We are running out of tea bags!", type: "stmt", class:"label-info"},
          { id: 9, name: "Bacon?", type: "vote", class:"label-success", choices:['Yes','No']}
          ]
 };
@@ -87,7 +87,7 @@ window.onblur = function() {
 function notify(user, title, message, historical){
     historical = (typeof historical !== 'undefined') ? historical : false;
     if(focused === false && historical === false){
-        if (window.Notification.permission === 'granted') { 
+        if (window.Notification.permission === 'granted') {
             var notification = new Notification(title,{icon:user.gravatar,body:message});
             notification.onshow = function(){
                 setTimeout(function(){

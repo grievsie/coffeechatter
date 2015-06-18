@@ -1,7 +1,7 @@
 input[type="text"]{
     height: 25px;
 }
-.motd { 
+.motd {
     font-weight: bold;
     padding: 10px 0 15px 15px;
 }
@@ -11,4 +11,11 @@ input[type="text"]{
 
 .tt-dropdown-menu {
     background-color: hotpink;
+}
+
+
+body {
+    background-image: url("../img/mug_of_tea.jpg");
+    background-color: #cccccc;
+    color:white;
 }
